@@ -1,0 +1,21 @@
+{
+  "name": "netease-list-downloader",
+  "version": "1.0.0",
+  "description": "网易云音乐歌单下载",
+  "main": "download.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "phantomjs": "node_modules/.bin/phantomjs"
+  },
+  "keywords": [
+    "music",
+    "download"
+  ],
+  "author": "HansLjy",
+  "license": "MIT",
+  "dependencies": {
+    "argv": "0.0.2",
+    "cheerio": "^1.0.0-rc.2",
+    "superagent": "^3.8.3"
+  }
+}
