@@ -10,9 +10,10 @@
 git clone https://github.com/ezoiljy/netease-list-downloader.git
 npm install
 chmod +x download.js
-./download.js
+./download.sh
 ```
 
 ### 有待改进的地方
-- [ ] 后台下载
-- [ ] 增量下载（避免重复）
+- [ ] （更友善的）后台下载
+- [x] 增量下载（避免重复）
+- [ ] 使用说明（'-h'）
