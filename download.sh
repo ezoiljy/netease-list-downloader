@@ -2,9 +2,9 @@
 echo '请输入歌单id以及目标下载位置（目录请避免~符号）'
 read id path
 mkdir -p "$path/$id"
+node "`dirname $0`"/download.js $id > "$path/$id/log"
 cd "$path/$id"
 
-node download.js $id > log
 while read name url; do
 	[[ -e "$name.mp3" ]] || \
 		(wget -c "$url" -O "$name.mp3.part" -o "$name.log" &&
